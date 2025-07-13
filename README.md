@@ -1,8 +1,8 @@
 # RAG-with-AWS
 
 <img width="2000" height="905" alt="image" src="https://github.com/user-attachments/assets/9512e581-e9b3-463c-b465-3837566d509c" />
-## Introduction
 
+### Introduction
 This tutorial provides a step-by-step guide to setting up a **Retrieval-Augmented Generation (RAG)** system using **Amazon Bedrock**, leveraging the following components:
 
 - Documents stored in **Amazon S3**
@@ -10,32 +10,29 @@ This tutorial provides a step-by-step guide to setting up a **Retrieval-Augmente
 - An embedding model: **Titan Text Embeddings V2**
 - A Bedrock-hosted LLM (e.g., **Anthropic Claude**) to query the knowledge base
 
-Avant de creer base de connaissance on commence par configuer IAM users 
-Préparer un utilisateur IAM
-Important : L'utilisation de Bedrock nécessite un utilisateur IAM, et non le root user.
 
-1- Accédez à IAM dans la console AWS.
-<img width="1261" height="671" alt="image" src="https://github.com/user-attachments/assets/614142bd-f507-4876-b52d-a540fbeb8a0d" />
+### Create an IAM User
 
-Cliquez sur "Users" puis "Create user".
+> ⚠**Important**: Using Amazon Bedrock requires an **IAM user**, not the root user.
 
-<img width="2530" height="1351" alt="image" src="https://github.com/user-attachments/assets/f82244b0-e929-4819-9458-18bc70978fe2" />
+1. Go to the **IAM** service in the AWS Management Console.  
+   <img width="1261" height="671" alt="image" src="https://github.com/user-attachments/assets/614142bd-f507-4876-b52d-a540fbeb8a0d" />
 
-<img width="1269" height="673" alt="image" src="https://github.com/user-attachments/assets/41ec1702-d41b-4bde-8a4e-fc3a5c9a85ef" />
+2. Click on **"Users"**, then **"Create user"**.  
+   <img width="2530" height="1351" alt="image" src="https://github.com/user-attachments/assets/f82244b0-e929-4819-9458-18bc70978fe2" />
+   <img width="1269" height="673" alt="image" src="https://github.com/user-attachments/assets/41ec1702-d41b-4bde-8a4e-fc3a5c9a85ef" />
 
-Donnez un nom (ex: stephane) et cochez "Provide user access to AWS Console".
-<img width="1267" height="673" alt="image" src="https://github.com/user-attachments/assets/8d99b30f-5304-48e7-8510-4eae707ca7f5" />
+3. Choose a username and enable **"Provide user access to the AWS Management Console"**.  
+   Then set a custom password.  
+   <img width="1267" height="673" alt="image" src="https://github.com/user-attachments/assets/8d99b30f-5304-48e7-8510-4eae707ca7f5" />
 
-Donnez un nom (ex: stephane) et cochez "Provide user access to AWS Console".
+4. Attach the policy **`AdministratorAccess`** to the user.  
+   <img width="1268" height="676" alt="image" src="https://github.com/user-attachments/assets/6b85f4ea-508b-4823-8d91-6499acacb546" />
 
-<img width="1268" height="676" alt="image" src="https://github.com/user-attachments/assets/6b85f4ea-508b-4823-8d91-6499acacb546" />
+5. Create the user and use the provided sign-in URL to log in with your new credentials.  
+   <img width="1276" height="679" alt="image" src="https://github.com/user-attachments/assets/334c754b-b6ab-415a-a7b6-8f9712e86577" />
+   <img width="1265" height="672" alt="image" src="https://github.com/user-attachments/assets/58ca93b6-5eda-49ea-bb4d-cbde4397eceb" />
 
-<img width="1276" height="679" alt="image" src="https://github.com/user-attachments/assets/334c754b-b6ab-415a-a7b6-8f9712e86577" />
-
-Créez l'utilisateur et connectez-vous avec le lien fourni.
-
-
-<img width="1265" height="672" alt="image" src="https://github.com/user-attachments/assets/58ca93b6-5eda-49ea-bb4d-cbde4397eceb" />
 
 and go to knowledge bases and create knowledge bases with vector store
 
