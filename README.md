@@ -42,6 +42,9 @@ pour configuer s3 il fqut cree s3 bucket
 
 
 <img width="1274" height="370" alt="image" src="https://github.com/user-attachments/assets/75b151ad-4d9f-4fdb-985c-f33343add768" />
+etre sur que tu est dans la region us-east-1
+donner un nom au bucket et puis clickaue sur creqte bucket
+<img width="1276" height="570" alt="image" src="https://github.com/user-attachments/assets/24ed9117-c7ba-4d67-b261-4308b52473fd" />
 
 
 
