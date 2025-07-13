@@ -81,7 +81,7 @@ This tutorial provides a step-by-step guide to setting up a **Retrieval-Augmente
    <img width="1253" height="484" alt="image" src="https://github.com/user-attachments/assets/4894c118-2667-467f-a4a7-660dfb1f9561" />
 
 2. **Choose the embedding model**  
-   Select **Titan Text Embeddings V2** from Amazon.  
+   ex: Select **Titan Text Embeddings V2** from Amazon.  
    <img width="1265" height="635" alt="image" src="https://github.com/user-attachments/assets/ca1984c9-6175-4ade-952d-ae8c6ca3a534" />
 
 3. **Configure the vector store**  
@@ -104,11 +104,9 @@ This tutorial provides a step-by-step guide to setting up a **Retrieval-Augmente
 1. Click on **"Test knowledge base"**.  
    <img width="1268" height="679" alt="image" src="https://github.com/user-attachments/assets/350dbdeb-8d4a-4c68-b178-b93c4870dc6f" />
 
-2. Select a **Bedrock-hosted LLM** such as:
-   - **Anthropic Claude Haiku**
-   - **Anthropic Claude Sonnet**
+2. Select a **Bedrock-hosted LLM**.
 
-3. Ask a question .
+3. Ask a question.
 
 4. Bedrock will generate a response **based on your uploaded documents** and display the **source (S3 PDF link)**.  
    <img width="1248" height="668" alt="image" src="https://github.com/user-attachments/assets/0ce9f660-0650-48a2-875d-2eddd9e94d53" />
