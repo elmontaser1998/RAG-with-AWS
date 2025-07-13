@@ -74,43 +74,44 @@ This tutorial provides a step-by-step guide to setting up a **Retrieval-Augmente
 5. Confirm that your bucket contains the uploaded object.  
    <img width="1262" height="544" alt="image" src="https://github.com/user-attachments/assets/2d947619-944a-4f57-a854-c15cde54e63b" />
 
+### Continue Configuring the Knowledge Base in Bedrock
 
-retourner au confugueration de s3
-<img width="1277" height="664" alt="image" src="https://github.com/user-attachments/assets/f11ce147-cc1b-4ae0-887a-51a9ed9810b4" />
-clicker sur borzse S3 
-tu trouve le bucket deja cre
+1. Back in Bedrock, browse your S3 buckets and select the one you just created.  
+   <img width="1277" height="664" alt="image" src="https://github.com/user-attachments/assets/f11ce147-cc1b-4ae0-887a-51a9ed9810b4" />
+   <img width="1253" height="484" alt="image" src="https://github.com/user-attachments/assets/4894c118-2667-467f-a4a7-660dfb1f9561" />
 
-<img width="1253" height="484" alt="image" src="https://github.com/user-attachments/assets/4894c118-2667-467f-a4a7-660dfb1f9561" />
+2. **Choose the embedding model**  
+   Select **Titan Text Embeddings V2** from Amazon.  
+   <img width="1265" height="635" alt="image" src="https://github.com/user-attachments/assets/ca1984c9-6175-4ade-952d-ae8c6ca3a534" />
 
+3. **Configure the vector store**  
+   Choose **"Quick create new vector store"** to automatically provision **Amazon OpenSearch Serverless**.  
+   <img width="1268" height="674" alt="image" src="https://github.com/user-attachments/assets/498ea6a0-5bef-4cd2-9ea0-bef7a76f442e" />
 
-puis next pour choisir embedding model
+   > ⚠️ **Warning**: OpenSearch Serverless can be costly (~$172/month minimum).  
+   > ✅ **Free Alternative**: You can use **Pinecone** (2GB free tier), but it is **not covered in this tutorial**.
 
-<img width="1265" height="635" alt="image" src="https://github.com/user-attachments/assets/ca1984c9-6175-4ade-952d-ae8c6ca3a534" />
+4. Click **Create Knowledge Base**.
 
-pou le vector store je coisir d utilise opensearch servless 
-
-
-<img width="1268" height="674" alt="image" src="https://github.com/user-attachments/assets/498ea6a0-5bef-4cd2-9ea0-bef7a76f442e" />
-
-
-puis create knozledge base une remarque vous avez des erreurs si vous  utilise pas IAM user
-apres quelque temps base de connaisqnce est available
-
-<img width="1241" height="649" alt="image" src="https://github.com/user-attachments/assets/60317156-beab-4274-a295-eaa78ae3cb62" />
-
-cliquer sur bqse de connaissonce et sync our voire si il y a des probleme
-
-<img width="1255" height="662" alt="image" src="https://github.com/user-attachments/assets/35fbe377-c9c2-4d74-bd9e-4b4b311a6a4c" />
-
-puis clicer sur test knowledge bqse
-
-<img width="1268" height="679" alt="image" src="https://github.com/user-attachments/assets/350dbdeb-8d4a-4c68-b178-b93c4870dc6f" />
+5. Once the knowledge base is created, **sync it** to load the documents from S3.  
+   <img width="1241" height="649" alt="image" src="https://github.com/user-attachments/assets/60317156-beab-4274-a295-eaa78ae3cb62" />
+   <img width="1255" height="662" alt="image" src="https://github.com/user-attachments/assets/35fbe377-c9c2-4d74-bd9e-4b4b311a6a4c" />
 
 
-and resultat
 
-<img width="1248" height="668" alt="image" src="https://github.com/user-attachments/assets/0ce9f660-0650-48a2-875d-2eddd9e94d53" />
+### Test the Knowledge Base
 
+1. Click on **"Test knowledge base"**.  
+   <img width="1268" height="679" alt="image" src="https://github.com/user-attachments/assets/350dbdeb-8d4a-4c68-b178-b93c4870dc6f" />
+
+2. Select a **Bedrock-hosted LLM** such as:
+   - **Anthropic Claude Haiku**
+   - **Anthropic Claude Sonnet**
+
+3. Ask a question .
+
+4. Bedrock will generate a response **based on your uploaded documents** and display the **source (S3 PDF link)**.  
+   <img width="1248" height="668" alt="image" src="https://github.com/user-attachments/assets/0ce9f660-0650-48a2-875d-2eddd9e94d53" />
 
 
 
