@@ -51,34 +51,30 @@ This tutorial provides a step-by-step guide to setting up a **Retrieval-Augmente
 > - A **web crawler** (to ingest webpage content)
 > - **Confluence**, **Salesforce**, or **SharePoint** for enterprise document access
 
-pour configuer s3 il fqut cree s3 bucket 
+### Create an S3 Bucket and Upload a PDF
+
+1. Go to **Amazon S3** → click **"Create bucket"**.  
+   <img width="1274" height="370" alt="image" src="https://github.com/user-attachments/assets/75b151ad-4d9f-4fdb-985c-f33343add768" />
+
+> ⚠️ **Important**: Make sure you select the **us-east-1** region.
+
+2. Enter a unique name for your bucket.  
+   <img width="1276" height="570" alt="image" src="https://github.com/user-attachments/assets/24ed9117-c7ba-4d67-b261-4308b52473fd" />
+
+3. Click **"Create bucket"** and wait for it to be created.  
+   <img width="1268" height="631" alt="image" src="https://github.com/user-attachments/assets/b8d593af-f58d-43cf-8ab7-ffbb5eabe44e" />
+
+4. Open your newly created bucket and click **"Upload"** → choose **"Add files"** or **"Add folder"**.  
+   <img width="1268" height="483" alt="image" src="https://github.com/user-attachments/assets/2b5716b0-3ea6-40f5-aac4-e93039890b37" />
+   <img width="1274" height="625" alt="image" src="https://github.com/user-attachments/assets/3ac6c8c9-cfa5-473d-a5b4-b710781d0faa" />
+   <img width="1262" height="346" alt="image" src="https://github.com/user-attachments/assets/aa3464cb-41c6-4c00-8a44-0ca6210116f4" />
+
+> Your file (e.g., a PDF document) is now successfully uploaded.
+
+5. Confirm that your bucket contains the uploaded object.  
+   <img width="1262" height="544" alt="image" src="https://github.com/user-attachments/assets/2d947619-944a-4f57-a854-c15cde54e63b" />
 
 
-<img width="1274" height="370" alt="image" src="https://github.com/user-attachments/assets/75b151ad-4d9f-4fdb-985c-f33343add768" />
-etre sur que tu est dans la region us-east-1
-donner un nom au bucket et puis clickaue sur creqte bucket
-<img width="1276" height="570" alt="image" src="https://github.com/user-attachments/assets/24ed9117-c7ba-4d67-b261-4308b52473fd" />
-
-
-notre bucket est cree 
-<img width="1268" height="631" alt="image" src="https://github.com/user-attachments/assets/b8d593af-f58d-43cf-8ab7-ffbb5eabe44e" />
-
-cliecker sur le bucket 
-puis uploader
-
-
-<img width="1268" height="483" alt="image" src="https://github.com/user-attachments/assets/2b5716b0-3ea6-40f5-aac4-e93039890b37" />
-
-pour ajouter des objets 
-
-<img width="1274" height="625" alt="image" src="https://github.com/user-attachments/assets/3ac6c8c9-cfa5-473d-a5b4-b710781d0faa" />
-
-exemple j ajouter artile attention is qll you need puis cliquer sur upload
-
-<img width="1262" height="346" alt="image" src="https://github.com/user-attachments/assets/aa3464cb-41c6-4c00-8a44-0ca6210116f4" />
-maintenat on a le bucket avec l object uploader dedant
-
-<img width="1262" height="544" alt="image" src="https://github.com/user-attachments/assets/2d947619-944a-4f57-a854-c15cde54e63b" />
 retourner au confugueration de s3
 <img width="1277" height="664" alt="image" src="https://github.com/user-attachments/assets/f11ce147-cc1b-4ae0-887a-51a9ed9810b4" />
 clicker sur borzse S3 
