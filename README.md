@@ -23,7 +23,37 @@ and create user
 
 puis ce connecter au compte
 
-<img width="1265" height="672" alt="image" src="https://github.com/user-attachments/assets/fb5d0d32-9482-4a05-aac7-851541a8c46e" />
+
+<img width="1265" height="672" alt="image" src="https://github.com/user-attachments/assets/58ca93b6-5eda-49ea-bb4d-cbde4397eceb" />
+
+and go to knowledge bases and create knowledge bases with vector store
+
+
+<img width="1268" height="675" alt="image" src="https://github.com/user-attachments/assets/952deb73-9bd5-444d-88ec-a398b58c3344" />
+
+choisir s3 comme source de donne ou tu peu choisir aute soure
+<img width="1244" height="650" alt="image" src="https://github.com/user-attachments/assets/d7276e5a-d0e8-45b2-b752-d2431e04519d" />
+
+
+
+<img width="1274" height="601" alt="image" src="https://github.com/user-attachments/assets/16815f30-3516-4519-b45d-cfc782090710" />
+
+pour configuer s3 il fqut cree s3 bucket 
+
+
+<img width="1274" height="370" alt="image" src="https://github.com/user-attachments/assets/75b151ad-4d9f-4fdb-985c-f33343add768" />
+
+
+
+<img width="1277" height="664" alt="image" src="https://github.com/user-attachments/assets/f11ce147-cc1b-4ae0-887a-51a9ed9810b4" />
+
+
+
+
+
+
+
+
 
 
 
